@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-  html { 
+  html {
     direction: ltr;
   }
   .ltr {
@@ -13,4 +12,20 @@
   .rtl {
     direction: rtl;
   }
+}
+.scrollbar-thin::-webkit-scrollbar {
+  width: 12px;
+  height: 102;
+  border-radius: 40px;
+  color: #000000;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* خود دستگیره (thumb) */
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: black; /* رنگ مشکی */
+  border-radius: 10px; /* گرد کردن */
 }
